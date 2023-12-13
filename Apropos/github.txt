@@ -1,0 +1,26 @@
+		Github
+		------	
+Quoi?
+-> Application web 
+
+Pourquoi?
+-> Pour travailler avec plusieurs personnes dans la realisation d'une application, pour deployer une application ou pour rendre public un projet
+
+Comment?
+-> Creer un compte github, installer l'application dans votre systeme. Vous pouvez a present creer votre propre repository ou collaborer avec une autre repository
+
+Termes inportant dans GIT
+-------------------------
+
+.Repository = C'est votre projet github avec sa propre repertoire
+.Cloner = Lier votre repository git avec votre machine local dont son repertoire peut etre defini
+.Branche = Environnement de developpement. On peut creer plusieurs branches dans un repository qui peut etre des environnements differents
+.Commit = Valider les changements effectues dans votre branche
+.Push = Appliquer les changements dans git web(Rendre en ligne les changements)
+.Pull = Tirer les changements dans git web vers ma machine local sur le meme branche
+.Merge = Integrer les changements depuis une autre branche dans ma branche local
+.Pull request = Integer les changements depuis ma branche local vers l'origine de ma branche
+
+Remarque
+--------
+Eviter de toucher la branche main qui est la branche mere de toutes les autres branches lors de la phase de developpement.
