@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+   
+    </style>
+</head>
+<body>
+    <h2>Liste Clients</h2>
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nom</th>
+                <th>Prenom</th>
+                <th>Date de naissance</th>
+                <th>Genre</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    
+
+    
+                <div id="chart">
+                    <canvas id="myChart" width="300" height="300"></canvas>
+                    <script>
+                        function drawPieChart(ctx, w, h, dataList, colorList) {
+                            var radius = h / 2 - 5;
+                            var centerX = w / 2;
+                            var centerY = h / 2;
+                            var lastEnd = 0;
+                            var total = 0;
+
+                            // Calculer le total
+                            for(var i = 0; i < dataList.length; i++) {
+                                total += dataList[i];
+                            }
+
+                            // Dessiner chaque section
+                            for(var i = 0; i < dataList.length; i++) {
+                                var thisPart = dataList[i];
+                                ctx.beginPath();
+                                ctx.fillStyle = colorList[i];
+                                ctx.moveTo(centerX, centerY);
+                                var arcSector = Math.PI * (2 * thisPart / total);
+                                ctx.arc(centerX, centerY, radius, lastEnd, lastEnd + arcSector, false);
+                                ctx.lineTo(centerX, centerY);
+                                ctx.fill();
+                                ctx.closePath();
+                                lastEnd += arcSector;
+                            }
+                        }
+
+                        var canvas = document.getElementById('myChart');
+                        var ctx = canvas.getContext('2d');
+                        var dataList = [60, 40];
+                        var colorList = ['blue', 'pink'];
+
+                        drawPieChart(ctx, canvas.width, canvas.height, dataList, colorList);
+                    </script>
+                </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

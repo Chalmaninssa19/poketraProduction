@@ -1,3 +1,3 @@
 <%
-    response.sendRedirect("./ListMatiereLook");
+    response.sendRedirect("./MatiereLook");
 %>

@@ -48,17 +48,112 @@
                 <nav class="sidebar sidebar-offcanvas" id="sidebar">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-                                <span class="menu-title">Creation matiere</span>
+                            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic-vente" aria-expanded="false" aria-controls="ui-basic">
+                                <span class="menu-title">Caracteristiques produits</span>
                                 <i class="mdi mdi-cart menu-icon"></i>
                             </a>
-                            <div class="collapse" id="ui-basic">
+                            <div class="collapse" id="ui-basic-vente">
                                 <ul class="nav flex-column sub-menu">
-                                    <li class="nav-item"> <a class="nav-link" href="./ListMatiereLook">Liste des matieres</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./Size">Taille</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./Type">Type</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./Look">Look</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./Unity">Unite</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./Matiere">Matiere</a></li>
                                 </ul>
-                            </div>
+                            </div>                                                                                                                                                            
                         </li>
-                        
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic-vente" aria-expanded="false" aria-controls="ui-basic">
+                                <span class="menu-title">Poste et grade</span>
+                                <i class="mdi mdi-cart menu-icon"></i>
+                            </a>
+                            <div class="collapse" id="ui-basic-vente">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="./Poste">Poste</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./Grade">Grade</a></li>
+                                </ul>
+                            </div>                                                                                                                                                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic-vente" aria-expanded="false" aria-controls="ui-basic">
+                                <span class="menu-title">Employe</span>
+                                <i class="mdi mdi-cart menu-icon"></i>
+                            </a>
+                            <div class="collapse" id="ui-basic-vente">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="./ListEmploye">employes</a></li>
+                                </ul>
+                            </div>                                                                                                                                                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic-vente" aria-expanded="false" aria-controls="ui-basic">
+                                <span class="menu-title">Formule</span>
+                                <i class="mdi mdi-cart menu-icon"></i>
+                            </a>
+                            <div class="collapse" id="ui-basic-vente">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="./MatiereLook">Matiere-Look</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./QuantityFormuleList">Quantite</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./TimeFormuleList">Duree employe</a></li>
+                                </ul>
+                            </div>                                                                                                                                                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic-vente" aria-expanded="false" aria-controls="ui-basic">
+                                <span class="menu-title">Stockage</span>
+                                <i class="mdi mdi-cart menu-icon"></i>
+                            </a>
+                            <div class="collapse" id="ui-basic-vente">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="./Mouvement">Mouvements</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./EtatStock">Etat de stock</a></li>
+                                </ul>
+                            </div>                                                                                                                                                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic-vente" aria-expanded="false" aria-controls="ui-basic">
+                                <span class="menu-title">Production et fabrication</span>
+                                <i class="mdi mdi-cart menu-icon"></i>
+                            </a>
+                            <div class="collapse" id="ui-basic-vente">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="./ProductList">Produits existants</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./ProductFabriquesList">Produits fabriques</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./StockFabrication">Stockage fabrication</a></li>
+                                </ul>
+                            </div>                                                                                                                                                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic-vente" aria-expanded="false" aria-controls="ui-basic">
+                                <span class="menu-title">Vente et client</span>
+                                <i class="mdi mdi-cart menu-icon"></i>
+                            </a>
+                            <div class="collapse" id="ui-basic-vente">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="./InsertClient">Client</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./InsertVenteClient">Insert vente</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./ListVenteClient">Liste vente</a></li>
+                                </ul>
+                            </div>                                                                                                                                                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic-vente" aria-expanded="false" aria-controls="ui-basic">
+                                <span class="menu-title">Facturation</span>
+                                <i class="mdi mdi-cart menu-icon"></i>
+                            </a>
+                            <div class="collapse" id="ui-basic-vente">
+                                <ul class="nav flex-column sub-menu">
+                                    <li class="nav-item"> <a class="nav-link" href="./InsertFacture">Creer facture</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="./ListFacture">listes factures</a></li>
+                                </ul>
+                            </div>                                                                                                                                                            
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Statistique">
+                                <span class="menu-title">Statistiques</span>
+                                <i class="mdi mdi-cart menu-icon"></i>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- partial -->

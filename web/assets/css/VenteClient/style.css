@@ -1,0 +1,25 @@
+body {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    margin-left: 40%;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+th {
+    background-color: rgb(130, 35, 194);
+    color: #fff;
+}

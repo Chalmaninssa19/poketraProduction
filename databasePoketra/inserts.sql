@@ -51,3 +51,32 @@ INSERT INTO matiere_quantity VALUES
 (3, 3, 1.8, 3),
 (4, 4, 2.2, 4),
 (5, 5, 2.0, 5);
+
+create sequence seq_regle_graduation;
+CREATE TABLE regle_graduation (
+id_regle_graduation INTEGER PRIMARY KEY default nextval('seq_regle_graduation'),
+id_profession_ancien INTEGER REFERENCES profession(id_profession),
+id_profession_actuel INTEGER REFERENCES profession(id_profession),
+duree_annee_min INTEGER,
+duree_annee_max INTEGER
+);
+
+INSERT INTO regle_graduation(id_profession_ancien, id_profession_actuel, duree_annee_min, duree_annee_max)
+ VALUES
+(6, 6, 0, 2),
+(6, 7, 2, 3),
+(7, 8, 3, 10),
+(9, 10, 2, 3),
+(10, 11, 3, 10);
+
+INSERT INTO genre(genre)
+VALUES
+('Homme'),
+('Femme');
+
+INSERT INTO client(nom, prenom, date_naissance, email, id_genre) 
+VALUES
+('Rakoto', 'Jean', '2000-05-23', 'rakotoJean@gmail.com', 1),
+('Ravao', 'Eva', '2003-10-02', 'ravaoBehara@gmail.com', 2),
+('Rameva', 'Justin', '1997-03-10', 'ramevaJustin@gmail.com', 1),
+('Rajao', 'Hanitra', '19999-08-15', 'rajaoHanitra@gmail.com', 2);
