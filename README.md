@@ -1,2 +1,2 @@
 # poketraProduction
- Une application web qui consiste a gerer la fabrication des poketra d'une societe
+ Une application web permettant de gérer la production et la fabrication des Poketra.
